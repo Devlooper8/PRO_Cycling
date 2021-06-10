@@ -1,0 +1,68 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 600, 400 )
+			"defaultCloseOperation": 2
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "Intro"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+				"opaque": false
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Katalog"
+					"preferredSize": new java.awt.Dimension( 65, 21 )
+					"horizontalTextPosition": 0
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					"maximumSize": new java.awt.Dimension( 70, 32767 )
+					"minimumSize": new java.awt.Dimension( 70, 21 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "MenuBicykle"
+						"text": "Cestné bicykle"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "MenuBicykleActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "Horské bicykle"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "Zjazdové bicykle"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer1"
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "Objednavky"
+					"text": "Objednávky"
+					"requestFocusEnabled": false
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ObjednavkyMouseClicked", true ) )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "Odhlasit"
+					"text": "Odhlásiť"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "OdhlasitMouseClicked", true ) )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 510, 535 )
+		} )
+	}
+}
